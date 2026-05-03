@@ -88,6 +88,8 @@
       --accent-hover: #FFC933;
       --shadow: 0 12px 28px rgba(0,0,0,.65);
       --noise-opacity: 0.05;
+      --nav-bg: rgba(22,22,26,0.92);
+      --nav-bg-menu: rgba(22,22,26,0.97);
     }
 
     .theme-light {
@@ -104,7 +106,12 @@
       --accent-hover: #FFB800;
       --shadow: 0 12px 28px rgba(0,0,0,.12);
       --noise-opacity: 0.02;
+      --nav-bg: rgba(255,255,255,0.92);
+      --nav-bg-menu: rgba(255,255,255,0.97);
     }
+
+    .nav-bg { background-color: var(--nav-bg) !important; }
+    .nav-bg-menu { background-color: var(--nav-bg-menu) !important; }
 
     body {
       background-color: var(--bg-primary);
@@ -542,7 +549,7 @@
   <div class="noise-bg"></div>
 
   <!-- NAV -->
-  <nav class="fixed w-full z-40 bg-secondary/90 backdrop-blur border-b border-themed" style="background-color: rgba(22,22,26,0.92);">
+  <nav class="fixed w-full z-40 backdrop-blur border-b border-themed nav-bg">
     <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-2">
       <a href="#top" class="flex items-center gap-3 min-w-0 flex-shrink">
         <img src="images/logo.png" alt="KranAlmaty логотип" class="logo-img" onerror="this.style.display='none'">
@@ -603,7 +610,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobileMenu" class="menu-panel lg:hidden absolute left-0 right-0 top-full border-t border-themed bg-secondary/95 backdrop-blur" style="background-color: rgba(22,22,26,0.97);">
+    <div id="mobileMenu" class="menu-panel lg:hidden absolute left-0 right-0 top-full border-t border-themed backdrop-blur nav-bg-menu">
       <div class="container mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4 nav-link text-secondary">
         <a href="#about" class="hover:text-primary transition">О компании</a>
         <a href="#fleet" class="hover:text-primary transition">Автопарк</a>
