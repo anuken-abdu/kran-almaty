@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KranAlmaty | Аренда автокранов в Алматы 25–90 тонн</title>
-  <meta name="description" content="Аренда автокранов в Алматы от 25 до 90 тонн. Работаем 24/7. Быстрый выезд, опытные крановщики, прозрачные цены. +7 771 897 7549" />
-  <meta name="keywords" content="аренда автокрана Алматы, автокран 25 тонн, автокран 50 тонн, автокран 90 тонн, услуги автокрана">
+  <title>KranAlmaty | Аренда автокранов в Алматы 25–50 тонн</title>
+  <meta name="description" content="Аренда автокранов в Алматы от 25 до 50 тонн. Техника 2023–2024 года выпуска. Работаем 24/7. Полный пакет документов: ЭСФ, ЭАВР, ЧТО, ПТО. +7 771 897 7549" />
+  <meta name="keywords" content="аренда автокрана Алматы, автокран 25 тонн, автокран 32 тонны, автокран 40 тонн, автокран 50 тонн, услуги автокрана">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
@@ -14,8 +14,8 @@
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="KranAlmaty — Аренда автокранов в Алматы 25–90 тонн">
-  <meta property="og:description" content="Работаем 24/7. От 25 до 90 тонн. Опытные крановщики, прозрачные цены.">
+  <meta property="og:title" content="KranAlmaty — Аренда автокранов в Алматы 25–50 тонн">
+  <meta property="og:description" content="Работаем 24/7. От 25 до 50 тонн. Техника 2023–2024 г.в. Полный пакет документов.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/og-banner.jpg">
   <meta property="og:image:width" content="1200">
@@ -60,21 +60,16 @@
   </script>
 
   <style>
-    /* === ФИКС ГОРИЗОНТАЛЬНОГО СКРОЛЛА НА МОБИЛЬНЫХ === */
     html, body {
       overflow-x: hidden;
       max-width: 100vw;
       width: 100%;
     }
     *, *::before, *::after { box-sizing: border-box; }
-
-    /* Защита от вылета элементов с transform/AOS-анимациями */
     main, section, header, footer, nav { max-width: 100%; }
 
     :root{
       --nav-safe: 88px;
-
-      /* Dark theme (default) */
       --bg-primary: #0E0E10;
       --bg-secondary: #16161A;
       --bg-tertiary: #1E1E22;
@@ -123,7 +118,6 @@
 
     section, footer { scroll-margin-top: var(--nav-safe); }
 
-    /* Tailwind override colors via CSS variables */
     .bg-primary { background-color: var(--bg-primary) !important; }
     .bg-secondary { background-color: var(--bg-secondary) !important; }
     .bg-tertiary { background-color: var(--bg-tertiary) !important; }
@@ -141,7 +135,6 @@
     .accent-bg { background-color: var(--accent) !important; }
     .accent-border { border-color: var(--accent) !important; }
 
-    /* Noise */
     .noise-bg {
       position: fixed; inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
@@ -150,10 +143,8 @@
       z-index: 50;
     }
 
-    /* Typography */
     .font-head { font-family: "Oswald", sans-serif; letter-spacing: 0.02em; }
 
-    /* Skewed buttons */
     .clip-btn {
       clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
       transition: all 0.3s ease;
@@ -165,23 +156,6 @@
       }
     }
 
-    /* Glitch hover (только для устройств с hover) */
-    @media (hover: hover) {
-      .glitch-hover:hover {
-        animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
-        color: var(--accent);
-      }
-    }
-    @keyframes glitch {
-      0% { transform: translate(0) }
-      20% { transform: translate(-2px, 2px) }
-      40% { transform: translate(-2px, -2px) }
-      60% { transform: translate(2px, 2px) }
-      80% { transform: translate(2px, -2px) }
-      100% { transform: translate(0) }
-    }
-
-    /* Mobile menu */
     .menu-panel {
       opacity: 0;
       transform: translateY(-10px);
@@ -196,7 +170,6 @@
 
     .hero-shadow { text-shadow: 0 12px 28px rgba(0,0,0,.65); }
 
-    /* Lightbox */
     .lb-open { overflow: hidden; }
     .lightbox {
       position: fixed; inset: 0; z-index: 100;
@@ -225,7 +198,6 @@
       cursor: pointer;
     }
 
-    /* Caption text */
     .caption-text {
       font-family: "Inter", sans-serif;
       font-weight: 600;
@@ -247,7 +219,6 @@
       line-height: 1.65;
     }
 
-    /* Crane card */
     .crane-card {
       position: relative;
       overflow: hidden;
@@ -273,7 +244,6 @@
       z-index: 2;
     }
 
-    /* Theme toggle */
     .theme-toggle {
       width: 44px; height: 44px;
       display: grid; place-items: center;
@@ -288,7 +258,6 @@
       color: var(--accent);
     }
 
-    /* Nav social icons */
     .nav-social {
       width: 40px; height: 40px;
       display: grid; place-items: center;
@@ -304,16 +273,6 @@
       transform: translateY(-1px);
     }
 
-    /* Stats counter */
-    .stat-num {
-      font-family: "Oswald", sans-serif;
-      font-weight: 700;
-      font-size: 3rem;
-      line-height: 1;
-      color: var(--accent);
-    }
-
-    /* Form inputs */
     .form-input {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
@@ -332,7 +291,6 @@
     .form-input::placeholder { color: var(--text-muted); }
     textarea.form-input { resize: vertical; }
 
-    /* Process step */
     .step-number {
       font-family: "Oswald", sans-serif;
       font-weight: 700;
@@ -342,7 +300,6 @@
       opacity: 0.25;
     }
 
-    /* Hero gradient overlay */
     .hero-overlay {
       background: linear-gradient(180deg,
         rgba(14,14,16,0.4) 0%,
@@ -356,7 +313,6 @@
         rgba(245,245,247,0.95) 100%);
     }
 
-    /* Animated diagonal stripe */
     .stripe-bg {
       background-image: repeating-linear-gradient(
         45deg,
@@ -367,33 +323,6 @@
       );
     }
 
-    /* Calculator slider */
-    input[type="range"].calc-slider {
-      -webkit-appearance: none;
-      width: 100%;
-      height: 6px;
-      background: var(--border-color);
-      outline: none;
-      border-radius: 3px;
-    }
-    input[type="range"].calc-slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 22px; height: 22px;
-      background: var(--accent);
-      cursor: pointer;
-      border-radius: 50%;
-      border: 3px solid var(--bg-primary);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    }
-    input[type="range"].calc-slider::-moz-range-thumb {
-      width: 22px; height: 22px;
-      background: var(--accent);
-      cursor: pointer;
-      border-radius: 50%;
-      border: 3px solid var(--bg-primary);
-    }
-
-    /* FAQ */
     .faq-item summary {
       list-style: none;
       cursor: pointer;
@@ -426,7 +355,6 @@
       line-height: 1.7;
     }
 
-    /* WhatsApp floating button */
     .wa-float {
       position: fixed;
       bottom: 24px;
@@ -449,23 +377,19 @@
       100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
     }
 
-    /* Hide default details marker on Safari */
     summary { list-style: none; }
     summary::-webkit-details-marker { display: none; }
 
-    /* Light theme adjustments for hero text */
     .theme-light .hero-shadow {
       text-shadow: 0 4px 12px rgba(255,255,255,0.5);
     }
 
-    /* Phone tag link */
     .phone-tag {
       font-family: "Oswald", sans-serif;
       font-weight: 600;
       letter-spacing: 0.05em;
     }
 
-    /* Logo image */
     .logo-img {
       width: 40px;
       height: 40px;
@@ -473,20 +397,11 @@
       flex-shrink: 0;
     }
 
-    /* Active tonnage style */
-    .active-tonnage {
-      background: var(--accent) !important;
-      color: #000 !important;
-      border-color: var(--accent) !important;
-    }
-
-    /* === МОБИЛЬНАЯ АДАПТИВНОСТЬ === */
     @media (max-width: 640px) {
       .hero-title {
         font-size: 2.75rem !important;
         line-height: 1 !important;
       }
-      .stat-num { font-size: 2.25rem; }
       .step-number { font-size: 3rem; }
       .faq-item summary {
         padding: 1rem 1.125rem;
@@ -507,16 +422,6 @@
         padding: 12px 14px;
         font-size: 14px;
       }
-      /* Калькулятор: уменьшаем гигантскую цену */
-      #priceTotal {
-        font-size: 2.5rem !important;
-      }
-      /* Tonnage кнопки чуть компактнее */
-      .tonnage-btn {
-        padding-top: 0.625rem;
-        padding-bottom: 0.625rem;
-        font-size: 0.8rem;
-      }
     }
 
     @media (max-width: 380px) {
@@ -524,7 +429,6 @@
       .container { padding-left: 1rem !important; padding-right: 1rem !important; }
     }
 
-    /* AOS-фикс — убираем сильные горизонтальные сдвиги на мобильных */
     @media (max-width: 768px) {
       [data-aos="fade-right"],
       [data-aos="fade-left"] {
@@ -534,13 +438,6 @@
       [data-aos="fade-left"].aos-animate {
         transform: translateY(0) !important;
       }
-    }
-
-    /* Утилиты обрезки */
-    .truncate-safe {
-      min-width: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
   </style>
 </head>
@@ -564,10 +461,10 @@
       </a>
 
       <div class="hidden lg:flex gap-3 xl:gap-5 nav-link text-secondary whitespace-nowrap">
-        <a href="#about" class="hover:text-primary transition">О компании</a>
         <a href="#fleet" class="hover:text-primary transition">Автопарк</a>
+        <a href="#about" class="hover:text-primary transition">О компании</a>
+        <a href="#info" class="hover:text-primary transition">Условия</a>
         <a href="#services" class="hover:text-primary transition">Услуги</a>
-        <a href="#calculator" class="hover:text-primary transition">Калькулятор</a>
         <a href="#process" class="hover:text-primary transition">Как работаем</a>
         <a href="#faq" class="hover:text-primary transition">FAQ</a>
         <a href="#contact" class="hover:text-primary transition">Контакты</a>
@@ -584,12 +481,12 @@
           <span>+7 771 897 7549</span>
         </a>
 
-        <a href="#contact" class="accent-bg text-black font-head font-bold text-sm uppercase px-6 py-2 hover:opacity-90 transition duration-300 transform -skew-x-12">
+        <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD" target="_blank" rel="noopener" class="accent-bg text-black font-head font-bold text-sm uppercase px-6 py-2 hover:opacity-90 transition duration-300 transform -skew-x-12">
           <span class="block skew-x-12">Заказать</span>
         </a>
       </div>
 
-      <!-- Mobile right -->
+      <!-- Mobile right (БЕЗ WhatsApp значка возле бургера) -->
       <div class="lg:hidden flex items-center gap-2 flex-shrink-0">
         <button id="themeToggleMobile" class="theme-toggle" aria-label="Переключить тему" style="width:40px;height:40px;">
           <i class="fas fa-sun" id="themeIconMobile"></i>
@@ -597,10 +494,6 @@
 
         <a class="nav-social" href="tel:+77718977549" aria-label="Позвонить">
           <i class="fas fa-phone"></i>
-        </a>
-
-        <a class="nav-social" href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
         </a>
 
         <button id="menuBtn" class="text-primary text-2xl ml-1" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
@@ -612,17 +505,16 @@
     <!-- Mobile menu -->
     <div id="mobileMenu" class="menu-panel lg:hidden absolute left-0 right-0 top-full border-t border-themed backdrop-blur nav-bg-menu">
       <div class="container mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4 nav-link text-secondary">
-        <a href="#about" class="hover:text-primary transition">О компании</a>
         <a href="#fleet" class="hover:text-primary transition">Автопарк</a>
+        <a href="#about" class="hover:text-primary transition">О компании</a>
+        <a href="#info" class="hover:text-primary transition">Условия работы</a>
         <a href="#services" class="hover:text-primary transition">Услуги</a>
-        <a href="#calculator" class="hover:text-primary transition">Калькулятор стоимости</a>
         <a href="#process" class="hover:text-primary transition">Как мы работаем</a>
         <a href="#advantages" class="hover:text-primary transition">Преимущества</a>
-        <a href="#gallery" class="hover:text-primary transition">Галерея работ</a>
         <a href="#faq" class="hover:text-primary transition">Вопросы и ответы</a>
         <a href="#contact" class="hover:text-primary transition">Контакты</a>
 
-        <a href="#contact" class="mt-2 inline-flex items-center justify-center accent-bg text-black font-head font-bold text-sm uppercase px-6 py-3 hover:opacity-90 transition duration-300 transform -skew-x-12">
+        <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD" target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 accent-bg text-black font-head font-bold text-sm uppercase px-6 py-3 hover:opacity-90 transition duration-300 transform -skew-x-12">
           <span class="block skew-x-12">Заказать кран</span>
         </a>
       </div>
@@ -631,7 +523,6 @@
 
   <!-- HERO -->
   <header id="top" class="relative min-h-[100svh] flex items-center overflow-hidden bg-primary">
-    <!-- Background -->
     <div class="absolute inset-0 z-0">
       <img src="images/hero-bg.jpg"
            alt="Автокран на стройплощадке в Алматы"
@@ -646,7 +537,7 @@
 
         <div class="flex items-center gap-3 mb-6" data-aos="fade-up">
           <span class="inline-block w-12 h-px accent-bg"></span>
-          <span class="caption-text accent-text">Алматы • С 2008 года</span>
+          <span class="caption-text accent-text">Алматы • Техника 2023–2024 г.в.</span>
         </div>
 
         <h1 class="hero-title font-head text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-primary font-bold uppercase leading-[0.9] mb-6 hero-shadow" data-aos="fade-up" data-aos-delay="100">
@@ -655,29 +546,13 @@
           в Алматы
         </h1>
 
-        <p class="body-text text-secondary text-base sm:text-xl max-w-2xl mb-8 hero-shadow" data-aos="fade-up" data-aos-delay="200">
-          От <b class="text-primary">25 до 90 тонн</b>. Работаем 24/7 по всему городу и области. Опытные крановщики, исправная техника, прозрачные цены без скрытых платежей.
+        <p class="body-text text-secondary text-base sm:text-xl max-w-2xl mb-10 hero-shadow" data-aos="fade-up" data-aos-delay="200">
+          От <b class="text-primary">25 до 50 тонн</b>, вылет стрелы от <b class="text-primary">32 до 50 метров</b>. Работаем 24/7 по всему городу и области. Опытные операторы, исправная техника, полный пакет документов.
         </p>
 
-        <!-- Quick stats -->
-        <div class="grid grid-cols-3 gap-2 sm:gap-6 max-w-xl mb-10" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-themed p-3 sm:p-4 text-center">
-            <div class="font-head font-bold text-2xl sm:text-3xl accent-text">15+</div>
-            <div class="caption-text text-muted text-[9px] sm:text-[11px]">Лет на рынке</div>
-          </div>
-          <div class="card-themed p-3 sm:p-4 text-center">
-            <div class="font-head font-bold text-2xl sm:text-3xl accent-text">24/7</div>
-            <div class="caption-text text-muted text-[9px] sm:text-[11px]">Без выходных</div>
-          </div>
-          <div class="card-themed p-3 sm:p-4 text-center">
-            <div class="font-head font-bold text-2xl sm:text-3xl accent-text">2000+</div>
-            <div class="caption-text text-muted text-[9px] sm:text-[11px]">Заказов</div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="400">
-          <a href="#contact" class="inline-block accent-bg text-black font-head font-bold text-base sm:text-lg uppercase px-8 sm:px-10 py-4 clip-btn text-center">
-            Заказать кран
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%20%D0%B2%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 accent-bg text-black font-head font-bold text-base sm:text-lg uppercase px-8 sm:px-10 py-4 clip-btn text-center">
+            <i class="fab fa-whatsapp"></i> Заказать кран
           </a>
           <a href="tel:+77718977549" class="inline-flex items-center justify-center gap-2 border text-primary font-head font-bold text-base sm:text-lg uppercase px-6 sm:px-8 py-4 hover:accent-border hover:accent-text transition text-center" style="border-color: var(--text-secondary);">
             <i class="fas fa-phone"></i> Позвонить
@@ -687,13 +562,125 @@
       </div>
     </div>
 
-    <!-- Scroll indicator -->
     <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden md:block">
-      <a href="#about" class="text-primary opacity-60 hover:opacity-100 transition">
+      <a href="#fleet" class="text-primary opacity-60 hover:opacity-100 transition">
         <i class="fas fa-chevron-down text-2xl animate-bounce"></i>
       </a>
     </div>
   </header>
+
+  <!-- FLEET -->
+  <section id="fleet" class="py-20 sm:py-24 bg-secondary">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+        <p class="caption-text accent-text mb-3">Автопарк</p>
+        <h2 class="font-head text-3xl sm:text-5xl text-primary uppercase font-bold">Наши автокраны</h2>
+        <p class="body-text text-secondary mt-3 max-w-2xl mx-auto">
+          Подбираем технику под задачу. Чем тяжелее груз и выше точка подъёма — тем мощнее нужен кран.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
+
+        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+          <div class="tonnage-badge">25 ТОНН</div>
+          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
+            <img src="images/crane-25t.jpg" alt="Автокран 25 тонн в аренду" class="w-full h-full object-cover js-lightbox cursor-zoom-in" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Лёгкий класс</h3>
+            <p class="body-text text-secondary mb-4">
+              Идеален для небольших объектов: монтаж кондиционеров, разгрузка стройматериалов, установка рекламных конструкций.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary mb-2">
+              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Вылет стрелы: до 32 м</li>
+              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 25 т</li>
+              <li class="flex items-center gap-2"><i class="fas fa-route accent-text text-xs"></i>Манёвренный, заезжает в узкие места</li>
+            </ul>
+            <div class="pt-4 mt-4 border-t border-themed">
+              <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%2025%20%D1%82%D0%BE%D0%BD%D0%BD" target="_blank" rel="noopener" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs">
+                Узнать стоимость <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <div class="tonnage-badge">32 ТОННЫ</div>
+          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
+            <img src="images/crane-32t.jpg" alt="Автокран 32 тонны в аренду" class="w-full h-full object-cover js-lightbox cursor-zoom-in" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Средне-лёгкий класс</h3>
+            <p class="body-text text-secondary mb-4">
+              Оптимальный баланс между манёвренностью и грузоподъёмностью. Подходит для большинства строительно-монтажных работ.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary mb-2">
+              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Вылет стрелы: до 40 м</li>
+              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 32 т</li>
+              <li class="flex items-center gap-2"><i class="fas fa-screwdriver-wrench accent-text text-xs"></i>Универсальное применение</li>
+            </ul>
+            <div class="pt-4 mt-4 border-t border-themed">
+              <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%2032%20%D1%82%D0%BE%D0%BD%D0%BD%D1%8B" target="_blank" rel="noopener" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs">
+                Узнать стоимость <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <div class="tonnage-badge">40 ТОНН</div>
+          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
+            <img src="images/crane-40t.jpg" alt="Автокран 40 тонн в аренду" class="w-full h-full object-cover js-lightbox cursor-zoom-in" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Средний класс</h3>
+            <p class="body-text text-secondary mb-4">
+              Универсальный кран для серьёзных задач: монтаж металлоконструкций, погрузка крупногабаритных грузов, работа на стройплощадках.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary mb-2">
+              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Вылет стрелы: до 45 м</li>
+              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 40 т</li>
+              <li class="flex items-center gap-2"><i class="fas fa-industry accent-text text-xs"></i>Самый востребованный класс</li>
+            </ul>
+            <div class="pt-4 mt-4 border-t border-themed">
+              <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%2040%20%D1%82%D0%BE%D0%BD%D0%BD" target="_blank" rel="noopener" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs">
+                Узнать стоимость <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <div class="tonnage-badge">50 ТОНН</div>
+          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
+            <img src="images/crane-50t.jpg" alt="Автокран 50 тонн в аренду" class="w-full h-full object-cover js-lightbox cursor-zoom-in" loading="lazy">
+          </div>
+          <div class="p-6">
+            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Тяжёлый класс</h3>
+            <p class="body-text text-secondary mb-4">
+              Максимальные возможности нашего парка: монтаж промышленного оборудования, установка опор ЛЭП, многоэтажное строительство, работа с крупными металлоконструкциями.
+            </p>
+            <ul class="space-y-2 text-sm text-secondary mb-2">
+              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Вылет стрелы: до 50 м</li>
+              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 50 т</li>
+              <li class="flex items-center gap-2"><i class="fas fa-building accent-text text-xs"></i>Высотные и промышленные объекты</li>
+            </ul>
+            <div class="pt-4 mt-4 border-t border-themed">
+              <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%2050%20%D1%82%D0%BE%D0%BD%D0%BD" target="_blank" rel="noopener" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs">
+                Узнать стоимость <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="text-center caption-text text-muted mt-10">
+        * Минимальный заказ — 4 часа. Подача техники оплачивается отдельно.
+      </p>
+    </div>
+  </section>
 
   <!-- ABOUT -->
   <section id="about" class="py-20 sm:py-24 bg-primary">
@@ -709,13 +696,13 @@
           <div class="card-themed p-6 sm:p-8" data-aos="fade-right">
             <h3 class="font-head text-2xl text-primary uppercase mb-4 font-bold">Кто мы</h3>
             <p class="body-text text-secondary mb-4">
-              KranAlmaty — компания по аренде автокранов в Алматы и Алматинской области. С 2008 года мы предоставляем услуги грузоподъёмной техники для строительных компаний, частных заказчиков и промышленных объектов.
+              KranAlmaty — компания по аренде автокранов в Алматы и Алматинской области. Мы предоставляем услуги грузоподъёмной техники для строительных компаний, частных заказчиков и промышленных объектов.
             </p>
             <p class="body-text text-secondary mb-4">
-              В нашем парке — современные автокраны грузоподъёмностью от 25 до 90 тонн. Мы работаем с заказами любой сложности: от установки кондиционера на крышу до монтажа промышленного оборудования.
+              В нашем парке — современные автокраны 2023–2024 года выпуска грузоподъёмностью от 25 до 50 тонн с вылетом стрелы от 32 до 50 метров. Мы работаем с заказами любой сложности: от установки кондиционера на крышу до монтажа промышленного оборудования.
             </p>
             <p class="body-text text-secondary">
-              Каждая машина проходит регулярное ТО, а крановщики имеют допуски и многолетний опыт работы на объектах.
+              Каждая машина проходит регулярное ТО, а операторы имеют допуски и многолетний опыт работы на объектах.
             </p>
           </div>
 
@@ -745,7 +732,7 @@
               <i class="fas fa-receipt accent-text text-3xl mb-4"></i>
               <div>
                 <div class="font-head text-lg sm:text-xl text-primary uppercase font-bold mb-1">Документы</div>
-                <div class="text-xs sm:text-sm text-muted">Работаем с юр. и физ. лицами, нал/безнал</div>
+                <div class="text-xs sm:text-sm text-muted">Полный пакет: ЭСФ, ЭАВР, ЧТО, ПТО</div>
               </div>
             </div>
           </div>
@@ -755,148 +742,99 @@
     </div>
   </section>
 
-  <!-- FLEET / 4 категории техники -->
-  <section id="fleet" class="py-20 sm:py-24 bg-secondary">
+  <!-- INFO BLOCK — НОВАЯ СЕКЦИЯ СО СКРИНШОТА -->
+  <section id="info" class="py-20 sm:py-24 bg-secondary">
     <div class="container mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
-        <p class="caption-text accent-text mb-3">Автопарк</p>
-        <h2 class="font-head text-3xl sm:text-5xl text-primary uppercase font-bold">Наши автокраны</h2>
-        <p class="body-text text-secondary mt-3 max-w-2xl mx-auto">
-          Подбираем технику под задачу. Чем тяжелее груз и выше точка подъёма — тем мощнее нужен кран.
-        </p>
-      </div>
+      <div class="max-w-5xl mx-auto">
 
-      <div class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
+          <p class="caption-text accent-text mb-3">Условия работы</p>
+          <h2 class="font-head text-3xl sm:text-5xl text-primary uppercase font-bold">Что мы предлагаем</h2>
+        </div>
 
-        <!-- 25 тонн -->
-        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="0">
-          <div class="tonnage-badge">25 ТОНН</div>
-          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
-            <img src="images/crane-25t.jpg"
-                 alt="Автокран 25 тонн в аренду"
-                 class="w-full h-full object-cover js-lightbox cursor-zoom-in"
-                 loading="lazy">
-          </div>
-          <div class="p-6">
-            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Лёгкий класс</h3>
-            <p class="body-text text-secondary mb-4">
-              Идеален для небольших объектов: монтаж кондиционеров, разгрузка стройматериалов, установка рекламных конструкций.
-            </p>
-            <ul class="space-y-2 text-sm text-secondary mb-5">
-              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Высота стрелы: до 28 м</li>
-              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 25 т</li>
-              <li class="flex items-center gap-2"><i class="fas fa-route accent-text text-xs"></i>Манёвренный, заезжает в узкие места</li>
-            </ul>
-            <div class="flex items-center justify-between gap-3 pt-4 border-t border-themed">
-              <div>
-                <div class="caption-text text-muted text-[10px]">от</div>
-                <div class="font-head text-xl sm:text-2xl accent-text font-bold">12 000 ₸/час</div>
+        <div class="grid md:grid-cols-2 gap-5 sm:gap-6">
+
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="0">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-truck-monster text-lg"></i>
               </div>
-              <a href="#contact" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs whitespace-nowrap">
-                Заказать <i class="fas fa-arrow-right"></i>
-              </a>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Современная техника</h3>
             </div>
-          </div>
-        </article>
-
-        <!-- 50 тонн -->
-        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-          <div class="tonnage-badge">50 ТОНН</div>
-          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
-            <img src="images/crane-50t.jpg"
-                 alt="Автокран 50 тонн в аренду"
-                 class="w-full h-full object-cover js-lightbox cursor-zoom-in"
-                 loading="lazy">
-          </div>
-          <div class="p-6">
-            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Средний класс</h3>
-            <p class="body-text text-secondary mb-4">
-              Универсальный кран для большинства задач: монтаж металлоконструкций, погрузка крупногабаритных грузов, работа на стройплощадках.
+            <p class="body-text text-secondary">
+              Мы предоставляем услуги аренды автокранов <b class="text-primary">2023, 2024 года выпуска</b> для строительно-монтажных и других видов работ.
             </p>
-            <ul class="space-y-2 text-sm text-secondary mb-5">
-              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Высота стрелы: до 40 м</li>
-              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 50 т</li>
-              <li class="flex items-center gap-2"><i class="fas fa-screwdriver-wrench accent-text text-xs"></i>Самый востребованный класс</li>
-            </ul>
-            <div class="flex items-center justify-between gap-3 pt-4 border-t border-themed">
-              <div>
-                <div class="caption-text text-muted text-[10px]">от</div>
-                <div class="font-head text-xl sm:text-2xl accent-text font-bold">18 000 ₸/час</div>
-              </div>
-              <a href="#contact" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs whitespace-nowrap">
-                Заказать <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
           </div>
-        </article>
 
-        <!-- 70 тонн -->
-        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <div class="tonnage-badge">70 ТОНН</div>
-          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
-            <img src="images/crane-70t.jpg"
-                 alt="Автокран 70 тонн в аренду"
-                 class="w-full h-full object-cover js-lightbox cursor-zoom-in"
-                 loading="lazy">
-          </div>
-          <div class="p-6">
-            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Тяжёлый класс</h3>
-            <p class="body-text text-secondary mb-4">
-              Для серьёзных объектов: монтаж промышленного оборудования, установка опор ЛЭП, многоэтажное строительство, работа с крупными металлоконструкциями.
-            </p>
-            <ul class="space-y-2 text-sm text-secondary mb-5">
-              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Высота стрелы: до 50 м</li>
-              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 70 т</li>
-              <li class="flex items-center gap-2"><i class="fas fa-industry accent-text text-xs"></i>Промышленные объекты</li>
-            </ul>
-            <div class="flex items-center justify-between gap-3 pt-4 border-t border-themed">
-              <div>
-                <div class="caption-text text-muted text-[10px]">от</div>
-                <div class="font-head text-xl sm:text-2xl accent-text font-bold">28 000 ₸/час</div>
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-weight-hanging text-lg"></i>
               </div>
-              <a href="#contact" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs whitespace-nowrap">
-                Заказать <i class="fas fa-arrow-right"></i>
-              </a>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Параметры техники</h3>
             </div>
+            <p class="body-text text-secondary">
+              В наличии техника грузоподъёмностью <b class="text-primary">от 25 до 50 тонн</b>. Вылет стрелы <b class="text-primary">от 32 до 50 метров</b>.
+            </p>
           </div>
-        </article>
 
-        <!-- 90 тонн -->
-        <article class="crane-card card-themed overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-          <div class="tonnage-badge">90 ТОНН</div>
-          <div class="aspect-[16/10] overflow-hidden bg-tertiary">
-            <img src="images/crane-90t.jpg"
-                 alt="Автокран 90 тонн в аренду"
-                 class="w-full h-full object-cover js-lightbox cursor-zoom-in"
-                 loading="lazy">
-          </div>
-          <div class="p-6">
-            <h3 class="font-head text-2xl text-primary uppercase font-bold mb-3">Сверхтяжёлый класс</h3>
-            <p class="body-text text-secondary mb-4">
-              Максимальные возможности: монтаж кранов, установка модульных зданий, работа на крупных промышленных и инфраструктурных объектах.
-            </p>
-            <ul class="space-y-2 text-sm text-secondary mb-5">
-              <li class="flex items-center gap-2"><i class="fas fa-arrows-up-down accent-text text-xs"></i>Высота стрелы: до 60 м</li>
-              <li class="flex items-center gap-2"><i class="fas fa-weight-hanging accent-text text-xs"></i>Грузоподъёмность: 90 т</li>
-              <li class="flex items-center gap-2"><i class="fas fa-building accent-text text-xs"></i>Высотное строительство</li>
-            </ul>
-            <div class="flex items-center justify-between gap-3 pt-4 border-t border-themed">
-              <div>
-                <div class="caption-text text-muted text-[10px]">от</div>
-                <div class="font-head text-xl sm:text-2xl accent-text font-bold">42 000 ₸/час</div>
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="0">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-user-tie text-lg"></i>
               </div>
-              <a href="#contact" class="caption-text accent-text hover:text-primary transition flex items-center gap-2 text-xs whitespace-nowrap">
-                Заказать <i class="fas fa-arrow-right"></i>
-              </a>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Опытные операторы</h3>
             </div>
+            <p class="body-text text-secondary">
+              У нас работают опытные операторы, которые выполняют <b class="text-primary">работу любой сложности</b> на любых объектах.
+            </p>
           </div>
-        </article>
+
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-file-invoice text-lg"></i>
+              </div>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Налоговый режим</h3>
+            </div>
+            <p class="body-text text-secondary">
+              Работаем на <b class="text-primary">ОУР</b> (общеустановленный налоговый режим). Предоставим полный пакет документов для бухгалтерии: <b class="text-primary">ЭСФ, ЭАВР</b> с возможностью принятия расходов к вычетам.
+            </p>
+          </div>
+
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="0">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-folder-open text-lg"></i>
+              </div>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Полный пакет документов</h3>
+            </div>
+            <p class="body-text text-secondary">
+              Предоставляем все необходимые сопроводительные документы: <b class="text-primary">ЧТО, ПТО</b> и другие, требуемые на объекте.
+            </p>
+          </div>
+
+          <div class="card-themed p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-start gap-4 mb-3">
+              <div class="flex-shrink-0 w-12 h-12 grid place-items-center accent-bg text-black">
+                <i class="fas fa-handshake text-lg"></i>
+              </div>
+              <h3 class="font-head text-xl sm:text-2xl text-primary uppercase font-bold pt-2">Долгосрочное сотрудничество</h3>
+            </div>
+            <p class="body-text text-secondary">
+              Для долгосрочных договоров предусмотрены <b class="text-primary">индивидуальные условия</b> и специальные тарифы.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-10 sm:mt-12 text-center" data-aos="fade-up">
+          <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D1%8E%D1%82%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE%D1%81%D1%80%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 accent-bg text-black font-head font-bold text-base sm:text-lg uppercase px-8 sm:px-10 py-4 clip-btn">
+            <i class="fab fa-whatsapp"></i> Обсудить условия
+          </a>
+        </div>
 
       </div>
-
-      <p class="text-center caption-text text-muted mt-10">
-        * Минимальный заказ — 4 часа. Подача техники оплачивается отдельно.
-      </p>
     </div>
   </section>
 
@@ -912,7 +850,7 @@
 
         <div class="card-themed p-6" data-aos="fade-up" data-aos-delay="0">
           <i class="fas fa-building accent-text text-3xl mb-4"></i>
-          <h3 class="font-head text-xl text-primary uppercase font-bold mb-2">Строительные работы</h3>
+          <h3 class="font-head text-xl text-primary uppercase font-bold mb-2">Строительно-монтажные работы</h3>
           <p class="body-text text-secondary text-sm">Монтаж бетонных плит, металлоконструкций, опалубки, кровельных материалов.</p>
         </div>
 
@@ -980,8 +918,8 @@
                 <i class="fas fa-check"></i>
               </div>
               <div class="min-w-0">
-                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Опытные крановщики</div>
-                <div class="text-sm text-secondary">Минимум 7 лет опыта у каждого, все с допусками.</div>
+                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Опытные операторы</div>
+                <div class="text-sm text-secondary">Работа любой сложности, все с допусками.</div>
               </div>
             </div>
 
@@ -990,7 +928,7 @@
                 <i class="fas fa-check"></i>
               </div>
               <div class="min-w-0">
-                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Прозрачные цены</div>
+                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Прозрачные условия</div>
                 <div class="text-sm text-secondary">Фиксированный тариф без скрытых доплат.</div>
               </div>
             </div>
@@ -1000,141 +938,35 @@
                 <i class="fas fa-check"></i>
               </div>
               <div class="min-w-0">
-                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Договор и закрывающие</div>
-                <div class="text-sm text-secondary">Полный пакет документов для юр. лиц.</div>
+                <div class="font-head text-base sm:text-lg text-primary uppercase font-bold">Полный пакет документов</div>
+                <div class="text-sm text-secondary">ЭСФ, ЭАВР, ЧТО, ПТО — для бухгалтерии и объекта.</div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="grid grid-cols-2 gap-3 sm:gap-4" data-aos="fade-left">
-          <div class="card-themed p-4 sm:p-6 text-center">
-            <div class="stat-num">15+</div>
-            <div class="caption-text text-muted mt-2">лет опыта</div>
-          </div>
-          <div class="card-themed p-4 sm:p-6 text-center">
-            <div class="stat-num">2000+</div>
-            <div class="caption-text text-muted mt-2">выполненных заказов</div>
-          </div>
-          <div class="card-themed p-4 sm:p-6 text-center">
-            <div class="stat-num">98%</div>
-            <div class="caption-text text-muted mt-2">постоянных клиентов</div>
-          </div>
-          <div class="card-themed p-4 sm:p-6 text-center">
-            <div class="stat-num">24/7</div>
-            <div class="caption-text text-muted mt-2">работаем без выходных</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CALCULATOR -->
-  <section id="calculator" class="py-20 sm:py-24 bg-primary">
-    <div class="container mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
-        <p class="caption-text accent-text mb-3">Калькулятор</p>
-        <h2 class="font-head text-3xl sm:text-5xl text-primary uppercase font-bold">Посчитать стоимость</h2>
-        <p class="body-text text-secondary mt-3 max-w-2xl mx-auto">
-          Примерный расчёт. Точную цену скажет менеджер с учётом района подачи и сложности работ.
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto card-themed p-5 sm:p-10" data-aos="fade-up">
-        <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
-
-          <div class="space-y-6">
-            <!-- Tonnage selector -->
-            <div>
-              <label class="caption-text text-muted block mb-3">Грузоподъёмность</label>
-              <div class="grid grid-cols-4 gap-2" id="tonnageSelector">
-                <button type="button" data-tonnage="25" data-rate="12000" class="tonnage-btn py-3 border border-themed text-primary font-head font-semibold text-sm uppercase hover:accent-border transition">25т</button>
-                <button type="button" data-tonnage="50" data-rate="18000" class="tonnage-btn py-3 border border-themed text-primary font-head font-semibold text-sm uppercase hover:accent-border transition active-tonnage">50т</button>
-                <button type="button" data-tonnage="70" data-rate="28000" class="tonnage-btn py-3 border border-themed text-primary font-head font-semibold text-sm uppercase hover:accent-border transition">70т</button>
-                <button type="button" data-tonnage="90" data-rate="42000" class="tonnage-btn py-3 border border-themed text-primary font-head font-semibold text-sm uppercase hover:accent-border transition">90т</button>
-              </div>
-            </div>
-
-            <!-- Hours slider -->
-            <div>
-              <label class="caption-text text-muted block mb-3">
-                Часов работы: <span class="accent-text font-bold" id="hoursValue">8</span>
-              </label>
-              <input type="range" class="calc-slider" id="hoursSlider" min="4" max="24" value="8" step="1">
-              <div class="flex justify-between text-xs text-muted mt-2">
-                <span>4 ч (мин)</span>
-                <span>24 ч</span>
-              </div>
-            </div>
-
-            <!-- Distance slider -->
-            <div>
-              <label class="caption-text text-muted block mb-3">
-                Удалённость: <span class="accent-text font-bold" id="distanceValue">10</span> км от центра
-              </label>
-              <input type="range" class="calc-slider" id="distanceSlider" min="0" max="60" value="10" step="5">
-              <div class="flex justify-between text-xs text-muted mt-2">
-                <span>0 км</span>
-                <span>60+ км</span>
-              </div>
-            </div>
-
-            <!-- Night work -->
-            <div>
-              <label class="flex items-center gap-3 cursor-pointer">
-                <input type="checkbox" id="nightWork" class="w-5 h-5" style="accent-color: var(--accent);">
-                <span class="text-primary font-semibold text-sm sm:text-base">Ночные работы (+20%)</span>
-              </label>
-            </div>
-
-            <!-- Weekend -->
-            <div>
-              <label class="flex items-center gap-3 cursor-pointer">
-                <input type="checkbox" id="weekendWork" class="w-5 h-5" style="accent-color: var(--accent);">
-                <span class="text-primary font-semibold text-sm sm:text-base">Выходной/праздник (+15%)</span>
-              </label>
-            </div>
-          </div>
-
-          <div class="card-themed p-5 sm:p-6 flex flex-col justify-between" style="background: var(--bg-tertiary);">
-            <div>
-              <div class="caption-text text-muted mb-2">Примерная стоимость</div>
-              <div class="font-head text-4xl sm:text-5xl lg:text-6xl accent-text font-bold mb-1 break-words" id="priceTotal">144 000</div>
-              <div class="caption-text text-muted">тенге</div>
-
-              <div class="mt-6 pt-6 border-t border-themed space-y-2 text-sm">
-                <div class="flex justify-between gap-2 text-secondary">
-                  <span>Стоимость часа</span>
-                  <span class="text-primary font-semibold whitespace-nowrap" id="hourRate">18 000 ₸</span>
-                </div>
-                <div class="flex justify-between gap-2 text-secondary">
-                  <span>Часов работы</span>
-                  <span class="text-primary font-semibold whitespace-nowrap" id="hoursDisplay">8</span>
-                </div>
-                <div class="flex justify-between gap-2 text-secondary">
-                  <span>Подача (км)</span>
-                  <span class="text-primary font-semibold whitespace-nowrap" id="distanceCharge">5 000 ₸</span>
-                </div>
-                <div class="flex justify-between gap-2 text-secondary">
-                  <span>Доплаты</span>
-                  <span class="text-primary font-semibold whitespace-nowrap" id="surcharges">0 ₸</span>
-                </div>
-              </div>
-            </div>
-
-            <a href="#contact" id="calcOrderBtn" class="mt-6 inline-block accent-bg text-black font-head font-bold uppercase px-6 py-4 clip-btn text-center">
-              Заказать со скидкой
+          <div class="mt-8">
+            <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%20%D0%B2%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 accent-bg text-black font-head font-bold uppercase px-8 py-4 clip-btn">
+              <i class="fab fa-whatsapp"></i> Заказать кран
             </a>
           </div>
-
         </div>
+
+        <div data-aos="fade-left">
+          <div class="aspect-[4/5] overflow-hidden bg-tertiary card-themed">
+            <img src="images/advantages.jpg"
+                 alt="Автокран KranAlmaty за работой"
+                 class="w-full h-full object-cover js-lightbox cursor-zoom-in"
+                 loading="lazy"
+                 onerror="this.style.display='none'">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- PROCESS -->
-  <section id="process" class="py-20 sm:py-24 bg-secondary">
+  <section id="process" class="py-20 sm:py-24 bg-primary">
     <div class="container mx-auto px-4 sm:px-6">
       <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
         <p class="caption-text accent-text mb-3">Процесс</p>
@@ -1161,7 +993,7 @@
           <div class="step-number absolute top-2 right-4">03</div>
           <i class="fas fa-truck-fast accent-text text-2xl mb-4 relative z-10"></i>
           <h3 class="font-head text-xl text-primary uppercase font-bold mb-2 relative z-10">Подача</h3>
-          <p class="body-text text-secondary text-sm relative z-10">Кран приезжает на объект в оговорённое время. Крановщик готов к работе.</p>
+          <p class="body-text text-secondary text-sm relative z-10">Кран приезжает на объект в оговорённое время. Оператор готов к работе.</p>
         </div>
 
         <div class="card-themed p-6 relative" data-aos="fade-up" data-aos-delay="300">
@@ -1171,25 +1003,6 @@
           <p class="body-text text-secondary text-sm relative z-10">Выполняем задачу, оформляем закрывающие документы, принимаете оплату.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="py-20 sm:py-24 bg-primary">
-    <div class="container mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12 sm:mb-14" data-aos="fade-up">
-        <p class="caption-text accent-text mb-3">Галерея</p>
-        <h2 class="font-head text-3xl sm:text-5xl text-primary uppercase font-bold">Наши работы</h2>
-      </div>
-
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4" data-aos="fade-up">
-        <img src="images/gallery-1.jpg" alt="Работа автокрана 1" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
-        <img src="images/gallery-2.jpg" alt="Работа автокрана 2" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
-        <img src="images/gallery-3.jpg" alt="Работа автокрана 3" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
-        <img src="images/gallery-4.jpg" alt="Работа автокрана 4" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
-        <img src="images/gallery-5.jpg" alt="Работа автокрана 5" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
-        <img src="images/gallery-6.jpg" alt="Работа автокрана 6" class="w-full aspect-[4/3] object-cover js-lightbox cursor-zoom-in" loading="lazy">
       </div>
     </div>
   </section>
@@ -1230,7 +1043,7 @@
             <i class="fas fa-plus faq-icon"></i>
           </summary>
           <div class="faq-content">
-            Подбор зависит от веса груза, высоты подъёма и условий заезда. Просто опишите задачу менеджеру — мы подберём оптимальный вариант. Часто хватает крана на 25 или 50 тонн, но если работа на высоте — нужны 70–90 т.
+            Подбор зависит от веса груза, высоты подъёма и условий заезда. Просто опишите задачу менеджеру — мы подберём оптимальный вариант. Часто хватает крана на 25 или 32 тонны, но если работа на высоте — нужны 40–50 т.
           </div>
         </details>
 
@@ -1240,7 +1053,7 @@
             <i class="fas fa-plus faq-icon"></i>
           </summary>
           <div class="faq-content">
-            Да, работаем по договору с полным пакетом закрывающих документов. Принимаем оплату наличными и безналом, с НДС и без.
+            Да, работаем по договору с полным пакетом закрывающих документов. Работаем на ОУР (общеустановленный налоговый режим). Предоставляем ЭСФ и ЭАВР с возможностью принятия расходов к вычетам, а также ЧТО и ПТО.
           </div>
         </details>
 
@@ -1260,7 +1073,7 @@
             <i class="fas fa-plus faq-icon"></i>
           </summary>
           <div class="faq-content">
-            Да, вся техника и работа крановщиков застрахованы. В случае нештатной ситуации мы несём ответственность по договору.
+            Да, вся техника и работа операторов застрахованы. В случае нештатной ситуации мы несём ответственность по договору.
           </div>
         </details>
 
@@ -1270,7 +1083,17 @@
             <i class="fas fa-plus faq-icon"></i>
           </summary>
           <div class="faq-content">
-            Да, работаем 24/7. На ночные работы и в праздники действует доплата (+15–20%).
+            Да, работаем 24/7. На ночные работы и в праздники действует доплата.
+          </div>
+        </details>
+
+        <details class="faq-item card-themed">
+          <summary>
+            <span>Есть ли скидки на длительный заказ?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </summary>
+          <div class="faq-content">
+            Да, для долгосрочных договоров предусмотрены индивидуальные условия и специальные тарифы. Свяжитесь с нами, обсудим детали.
           </div>
         </details>
 
@@ -1306,7 +1129,7 @@
               </div>
             </a>
 
-            <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD" class="flex items-start gap-4 group">
+            <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD" target="_blank" rel="noopener" class="flex items-start gap-4 group">
               <div class="flex-shrink-0 w-12 h-12 grid place-items-center card-themed group-hover:accent-border transition">
                 <i class="fab fa-whatsapp accent-text"></i>
               </div>
@@ -1356,10 +1179,10 @@
               <label class="caption-text text-muted block mb-2">Какой кран нужен</label>
               <select name="tonnage" class="form-input">
                 <option value="">Не знаю — подскажите</option>
-                <option value="25">25 тонн (лёгкий)</option>
-                <option value="50">50 тонн (средний)</option>
-                <option value="70">70 тонн (тяжёлый)</option>
-                <option value="90">90 тонн (сверхтяжёлый)</option>
+                <option value="25">25 тонн (вылет до 32 м)</option>
+                <option value="32">32 тонны (вылет до 40 м)</option>
+                <option value="40">40 тонн (вылет до 45 м)</option>
+                <option value="50">50 тонн (вылет до 50 м)</option>
               </select>
             </div>
 
@@ -1401,17 +1224,17 @@
             </div>
           </div>
           <p class="text-sm text-secondary">
-            Аренда автокранов в Алматы и области. Грузоподъёмность от 25 до 90 тонн. Работаем с 2008 года.
+            Аренда автокранов в Алматы и области. Грузоподъёмность от 25 до 50 тонн, вылет стрелы от 32 до 50 метров. Техника 2023–2024 года выпуска.
           </p>
         </div>
 
         <div>
           <div class="caption-text accent-text mb-3">Навигация</div>
           <div class="grid grid-cols-2 gap-2 text-sm">
-            <a href="#about" class="text-secondary hover:text-primary transition">О компании</a>
             <a href="#fleet" class="text-secondary hover:text-primary transition">Автопарк</a>
+            <a href="#about" class="text-secondary hover:text-primary transition">О компании</a>
+            <a href="#info" class="text-secondary hover:text-primary transition">Условия</a>
             <a href="#services" class="text-secondary hover:text-primary transition">Услуги</a>
-            <a href="#calculator" class="text-secondary hover:text-primary transition">Калькулятор</a>
             <a href="#process" class="text-secondary hover:text-primary transition">Как работаем</a>
             <a href="#faq" class="text-secondary hover:text-primary transition">FAQ</a>
           </div>
@@ -1423,7 +1246,7 @@
             <a href="tel:+77718977549" class="block text-primary phone-tag text-lg hover:accent-text transition">
               +7 771 897 7549
             </a>
-            <a href="https://wa.me/77718977549" class="text-secondary hover:text-primary transition flex items-center gap-2">
+            <a href="https://wa.me/77718977549" target="_blank" rel="noopener" class="text-secondary hover:text-primary transition flex items-center gap-2">
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
             <div class="text-secondary">Режим работы: 24/7</div>
@@ -1443,24 +1266,20 @@
     </div>
   </footer>
 
-  <!-- WhatsApp floating -->
   <a href="https://wa.me/77718977549?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%B0%D0%B2%D1%82%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%20%D0%B2%20%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" class="wa-float" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Back to top -->
   <button id="toTop" class="hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full accent-bg text-black border border-black/40 shadow-lg hover:opacity-90 transition" aria-label="Наверх">
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- Lightbox -->
   <div id="lightbox" class="lightbox" aria-hidden="true">
     <button class="lb-close" id="lbClose" aria-label="Закрыть"><i class="fas fa-xmark"></i></button>
     <img id="lbImg" src="" alt="Просмотр изображения">
   </div>
 
   <script>
-    // Load AOS dynamically
     (function(){
       var s = document.createElement('script');
       s.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
@@ -1475,7 +1294,6 @@
       document.body.appendChild(s);
     })();
 
-    // ============ THEME TOGGLE ============
     const html = document.documentElement;
     const iconDesktop = document.getElementById('themeIconDesktop');
     const iconMobile = document.getElementById('themeIconMobile');
@@ -1500,7 +1318,6 @@
       setTheme(current === 'light' ? 'dark' : 'light');
     }
 
-    // Init theme — default dark
     let savedTheme = 'dark';
     try { savedTheme = localStorage.getItem('siteTheme') || 'dark'; } catch(e){}
     setTheme(savedTheme);
@@ -1508,7 +1325,6 @@
     document.getElementById('themeToggleDesktop')?.addEventListener('click', toggleTheme);
     document.getElementById('themeToggleMobile')?.addEventListener('click', toggleTheme);
 
-    // ============ MOBILE MENU ============
     const btn = document.getElementById('menuBtn');
     const menu = document.getElementById('mobileMenu');
     const hashLinks = menu ? menu.querySelectorAll('a[href^="#"]') : [];
@@ -1528,7 +1344,6 @@
       }));
     }
 
-    // ============ BACK TO TOP ============
     const toTop = document.getElementById('toTop');
     window.addEventListener('scroll', () => {
       if (!toTop) return;
@@ -1537,7 +1352,6 @@
     });
     toTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // ============ LIGHTBOX ============
     const lb = document.getElementById('lightbox');
     const lbImg = document.getElementById('lbImg');
     const lbClose = document.getElementById('lbClose');
@@ -1575,7 +1389,6 @@
     lb?.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
     lbImg?.addEventListener('click', (e) => { e.stopPropagation(); toggleZoom(); });
 
-    // Drag (mouse)
     lbImg?.addEventListener('mousedown', (e) => {
       if (zoom === 1) return;
       dragging = true; startX = e.clientX; startY = e.clientY; baseX = tx; baseY = ty;
@@ -1588,7 +1401,6 @@
     });
     window.addEventListener('mouseup', () => { dragging = false; });
 
-    // Touch
     lbImg?.addEventListener('touchstart', (e) => {
       if (zoom === 1 || e.touches.length !== 1) return;
       dragging = true;
@@ -1607,76 +1419,6 @@
       if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
     });
 
-    // ============ CALCULATOR ============
-    const tonnageButtons = document.querySelectorAll('.tonnage-btn');
-    const hoursSlider = document.getElementById('hoursSlider');
-    const distanceSlider = document.getElementById('distanceSlider');
-    const nightCheck = document.getElementById('nightWork');
-    const weekendCheck = document.getElementById('weekendWork');
-
-    let calcState = {
-      rate: 18000,
-      tonnage: 50,
-      hours: 8,
-      distance: 10,
-      night: false,
-      weekend: false
-    };
-
-    function fmtMoney(num){
-      return new Intl.NumberFormat('ru-RU').format(Math.round(num));
-    }
-
-    function updateCalc(){
-      const baseHourly = calcState.rate * calcState.hours;
-      const distanceCharge = calcState.distance <= 10 ? 5000 : 5000 + (calcState.distance - 10) * 500;
-      let surcharge = 0;
-      if (calcState.night) surcharge += baseHourly * 0.20;
-      if (calcState.weekend) surcharge += baseHourly * 0.15;
-      const total = baseHourly + distanceCharge + surcharge;
-
-      document.getElementById('priceTotal').textContent = fmtMoney(total);
-      document.getElementById('hourRate').textContent = fmtMoney(calcState.rate) + ' ₸';
-      document.getElementById('hoursDisplay').textContent = calcState.hours;
-      document.getElementById('distanceCharge').textContent = fmtMoney(distanceCharge) + ' ₸';
-      document.getElementById('surcharges').textContent = fmtMoney(surcharge) + ' ₸';
-      document.getElementById('hoursValue').textContent = calcState.hours;
-      document.getElementById('distanceValue').textContent = calcState.distance;
-    }
-
-    tonnageButtons.forEach(b => {
-      b.addEventListener('click', () => {
-        tonnageButtons.forEach(x => x.classList.remove('active-tonnage'));
-        b.classList.add('active-tonnage');
-        calcState.rate = parseInt(b.dataset.rate);
-        calcState.tonnage = parseInt(b.dataset.tonnage);
-        updateCalc();
-      });
-    });
-
-    hoursSlider?.addEventListener('input', e => {
-      calcState.hours = parseInt(e.target.value);
-      updateCalc();
-    });
-
-    distanceSlider?.addEventListener('input', e => {
-      calcState.distance = parseInt(e.target.value);
-      updateCalc();
-    });
-
-    nightCheck?.addEventListener('change', e => {
-      calcState.night = e.target.checked;
-      updateCalc();
-    });
-
-    weekendCheck?.addEventListener('change', e => {
-      calcState.weekend = e.target.checked;
-      updateCalc();
-    });
-
-    updateCalc();
-
-    // ============ CONTACT FORM (через WhatsApp) ============
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
 
@@ -1696,11 +1438,6 @@
       formSuccess.classList.remove('hidden');
       contactForm.reset();
       setTimeout(() => formSuccess.classList.add('hidden'), 6000);
-    });
-
-    document.getElementById('calcOrderBtn')?.addEventListener('click', (e) => {
-      const sel = document.querySelector('select[name="tonnage"]');
-      if (sel) sel.value = String(calcState.tonnage);
     });
   </script>
 </body>
