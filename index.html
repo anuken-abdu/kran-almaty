@@ -1433,6 +1433,18 @@
 
     contactForm?.addEventListener('submit', (e) => {
       e.preventDefault();
+      contactForm?.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Google Ads конверсия
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18146613699/mkTCCPrpmqkcEMOz_cxD',
+    'value': 1.0,
+    'currency': 'USD'
+  });
+
+  const fd = new FormData(contactForm);
+  // ... остальной код без изменений
       const fd = new FormData(contactForm);
       const name = fd.get('name') || '';
       const phone = fd.get('phone') || '';
@@ -1448,6 +1460,18 @@
       contactForm.reset();
       setTimeout(() => formSuccess.classList.add('hidden'), 6000);
     });
+
+  // Отслеживание кликов по WhatsApp-кнопкам
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(link => {
+    link.addEventListener('click', () => {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18146613699/mkTCCPrpmqkcEMOz_cxD',
+        'value': 1.0,
+        'currency': 'USD'
+      });
+    });
+  });
+
   </script>
 </body>
 </html>
